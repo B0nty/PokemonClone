@@ -159,7 +159,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
                     
                     
                 } else { // Show alert that pokemon is to far away to catch
-                    let alertVC = UIAlertController(title: "WARRNING", message: "You are too far waay to catch the \(pokemon.name!). Move closer 😲", preferredStyle: .alert)
+                    let alertVC = UIAlertController(title: "WARRNING", message: "You are too far away to catch the \(pokemon.name!). Move closer 😲", preferredStyle: .alert)
                     
                     let OKAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
                     
