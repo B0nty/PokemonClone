@@ -13,6 +13,10 @@
 		1C45A56D1E9FCB8C0032B79B /* Pokemon_CloneAPP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C45A56B1E9FCB8C0032B79B /* Pokemon_CloneAPP.xcdatamodeld */; };
 		1C45A56F1E9FCB8C0032B79B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C45A56E1E9FCB8C0032B79B /* Assets.xcassets */; };
 		1C45A5721E9FCB8C0032B79B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C45A5701E9FCB8C0032B79B /* LaunchScreen.storyboard */; };
+		1C45A57B1E9FCC620032B79B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C45A57A1E9FCC620032B79B /* MapKit.framework */; };
+		1C45A57D1E9FE0CC0032B79B /* PokeDexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C45A57C1E9FE0CC0032B79B /* PokeDexViewController.swift */; };
+		1C45A5801EA00DE20032B79B /* CoreDataHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C45A57F1EA00DE20032B79B /* CoreDataHelp.swift */; };
+		1C45A5831EA022BF0032B79B /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C45A5821EA022BF0032B79B /* PokeAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		1C45A56E1E9FCB8C0032B79B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C45A5711E9FCB8C0032B79B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C45A5731E9FCB8C0032B79B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C45A57A1E9FCC620032B79B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1C45A57C1E9FE0CC0032B79B /* PokeDexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeDexViewController.swift; sourceTree = "<group>"; };
+		1C45A57F1EA00DE20032B79B /* CoreDataHelp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelp.swift; sourceTree = "<group>"; };
+		1C45A5821EA022BF0032B79B /* PokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C45A57B1E9FCC620032B79B /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,7 @@
 			children = (
 				1C45A5631E9FCB8C0032B79B /* Pokemon-CloneAPP */,
 				1C45A5621E9FCB8C0032B79B /* Products */,
+				1C45A5791E9FCC620032B79B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +66,9 @@
 		1C45A5631E9FCB8C0032B79B /* Pokemon-CloneAPP */ = {
 			isa = PBXGroup;
 			children = (
+				1C45A5811EA022990032B79B /* Class */,
+				1C45A57E1EA00DCB0032B79B /* View */,
 				1C45A5641E9FCB8C0032B79B /* AppDelegate.swift */,
-				1C45A5661E9FCB8C0032B79B /* ViewController.swift */,
 				1C45A5681E9FCB8C0032B79B /* Main.storyboard */,
 				1C45A56E1E9FCB8C0032B79B /* Assets.xcassets */,
 				1C45A5701E9FCB8C0032B79B /* LaunchScreen.storyboard */,
@@ -65,6 +76,32 @@
 				1C45A56B1E9FCB8C0032B79B /* Pokemon_CloneAPP.xcdatamodeld */,
 			);
 			path = "Pokemon-CloneAPP";
+			sourceTree = "<group>";
+		};
+		1C45A5791E9FCC620032B79B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C45A57A1E9FCC620032B79B /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C45A57E1EA00DCB0032B79B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C45A5661E9FCB8C0032B79B /* ViewController.swift */,
+				1C45A57C1E9FE0CC0032B79B /* PokeDexViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1C45A5811EA022990032B79B /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				1C45A5821EA022BF0032B79B /* PokeAnnotation.swift */,
+				1C45A57F1EA00DE20032B79B /* CoreDataHelp.swift */,
+			);
+			name = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +178,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C45A56D1E9FCB8C0032B79B /* Pokemon_CloneAPP.xcdatamodeld in Sources */,
+				1C45A5831EA022BF0032B79B /* PokeAnnotation.swift in Sources */,
+				1C45A57D1E9FE0CC0032B79B /* PokeDexViewController.swift in Sources */,
 				1C45A5671E9FCB8C0032B79B /* ViewController.swift in Sources */,
+				1C45A5801EA00DE20032B79B /* CoreDataHelp.swift in Sources */,
 				1C45A5651E9FCB8C0032B79B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
