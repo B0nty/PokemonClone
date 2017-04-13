@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C45A5651E9FCB8C0032B79B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C45A5641E9FCB8C0032B79B /* AppDelegate.swift */; };
+		1C45A5671E9FCB8C0032B79B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C45A5661E9FCB8C0032B79B /* ViewController.swift */; };
+		1C45A56A1E9FCB8C0032B79B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C45A5681E9FCB8C0032B79B /* Main.storyboard */; };
+		1C45A56D1E9FCB8C0032B79B /* Pokemon_CloneAPP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C45A56B1E9FCB8C0032B79B /* Pokemon_CloneAPP.xcdatamodeld */; };
+		1C45A56F1E9FCB8C0032B79B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C45A56E1E9FCB8C0032B79B /* Assets.xcassets */; };
+		1C45A5721E9FCB8C0032B79B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C45A5701E9FCB8C0032B79B /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C45A5611E9FCB8C0032B79B /* Pokemon-CloneAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokemon-CloneAPP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C45A5641E9FCB8C0032B79B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1C45A5661E9FCB8C0032B79B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1C45A5691E9FCB8C0032B79B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C45A56C1E9FCB8C0032B79B /* Pokemon_CloneAPP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pokemon_CloneAPP.xcdatamodel; sourceTree = "<group>"; };
+		1C45A56E1E9FCB8C0032B79B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C45A5711E9FCB8C0032B79B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1C45A5731E9FCB8C0032B79B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C45A55E1E9FCB8C0032B79B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C45A5581E9FCB8C0032B79B = {
+			isa = PBXGroup;
+			children = (
+				1C45A5631E9FCB8C0032B79B /* Pokemon-CloneAPP */,
+				1C45A5621E9FCB8C0032B79B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C45A5621E9FCB8C0032B79B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C45A5611E9FCB8C0032B79B /* Pokemon-CloneAPP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C45A5631E9FCB8C0032B79B /* Pokemon-CloneAPP */ = {
+			isa = PBXGroup;
+			children = (
+				1C45A5641E9FCB8C0032B79B /* AppDelegate.swift */,
+				1C45A5661E9FCB8C0032B79B /* ViewController.swift */,
+				1C45A5681E9FCB8C0032B79B /* Main.storyboard */,
+				1C45A56E1E9FCB8C0032B79B /* Assets.xcassets */,
+				1C45A5701E9FCB8C0032B79B /* LaunchScreen.storyboard */,
+				1C45A5731E9FCB8C0032B79B /* Info.plist */,
+				1C45A56B1E9FCB8C0032B79B /* Pokemon_CloneAPP.xcdatamodeld */,
+			);
+			path = "Pokemon-CloneAPP";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C45A5601E9FCB8C0032B79B /* Pokemon-CloneAPP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C45A5761E9FCB8C0032B79B /* Build configuration list for PBXNativeTarget "Pokemon-CloneAPP" */;
+			buildPhases = (
+				1C45A55D1E9FCB8C0032B79B /* Sources */,
+				1C45A55E1E9FCB8C0032B79B /* Frameworks */,
+				1C45A55F1E9FCB8C0032B79B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pokemon-CloneAPP";
+			productName = "Pokemon-CloneAPP";
+			productReference = 1C45A5611E9FCB8C0032B79B /* Pokemon-CloneAPP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C45A5591E9FCB8C0032B79B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = B0nty;
+				TargetAttributes = {
+					1C45A5601E9FCB8C0032B79B = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = BB9NBC38G8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1C45A55C1E9FCB8C0032B79B /* Build configuration list for PBXProject "Pokemon-CloneAPP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C45A5581E9FCB8C0032B79B;
+			productRefGroup = 1C45A5621E9FCB8C0032B79B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C45A5601E9FCB8C0032B79B /* Pokemon-CloneAPP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C45A55F1E9FCB8C0032B79B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C45A5721E9FCB8C0032B79B /* LaunchScreen.storyboard in Resources */,
+				1C45A56F1E9FCB8C0032B79B /* Assets.xcassets in Resources */,
+				1C45A56A1E9FCB8C0032B79B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C45A55D1E9FCB8C0032B79B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C45A56D1E9FCB8C0032B79B /* Pokemon_CloneAPP.xcdatamodeld in Sources */,
+				1C45A5671E9FCB8C0032B79B /* ViewController.swift in Sources */,
+				1C45A5651E9FCB8C0032B79B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1C45A5681E9FCB8C0032B79B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C45A5691E9FCB8C0032B79B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1C45A5701E9FCB8C0032B79B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C45A5711E9FCB8C0032B79B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C45A5741E9FCB8C0032B79B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C45A5751E9FCB8C0032B79B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C45A5771E9FCB8C0032B79B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BB9NBC38G8;
+				INFOPLIST_FILE = "Pokemon-CloneAPP/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "B0nty.Pokemon-CloneAPP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1C45A5781E9FCB8C0032B79B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BB9NBC38G8;
+				INFOPLIST_FILE = "Pokemon-CloneAPP/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "B0nty.Pokemon-CloneAPP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C45A55C1E9FCB8C0032B79B /* Build configuration list for PBXProject "Pokemon-CloneAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C45A5741E9FCB8C0032B79B /* Debug */,
+				1C45A5751E9FCB8C0032B79B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C45A5761E9FCB8C0032B79B /* Build configuration list for PBXNativeTarget "Pokemon-CloneAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C45A5771E9FCB8C0032B79B /* Debug */,
+				1C45A5781E9FCB8C0032B79B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1C45A56B1E9FCB8C0032B79B /* Pokemon_CloneAPP.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1C45A56C1E9FCB8C0032B79B /* Pokemon_CloneAPP.xcdatamodel */,
+			);
+			currentVersion = 1C45A56C1E9FCB8C0032B79B /* Pokemon_CloneAPP.xcdatamodel */;
+			path = Pokemon_CloneAPP.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1C45A5591E9FCB8C0032B79B /* Project object */;
+}
