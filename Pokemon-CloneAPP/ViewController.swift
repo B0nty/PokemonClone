@@ -80,9 +80,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         if annotation is MKUserLocation {
             let annoView = MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
             
-            annoView.image = UIImage(named: "player")   // declare picture instead of dot user location
+            annoView.image = UIImage(named: "player")   // Declare picture to use instead of dot for player location
             
-            var frame = annoView.frame  // set size of the picture
+            var frame = annoView.frame  // Set size of player picture
             frame.size.height = 40
             frame.size.width = 40
             
@@ -98,7 +98,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         
         annoView.image = UIImage(named: pokemon.imageName!)   // declare picture instead of pin of pokemon
         
-        var frame = annoView.frame  // set size of the picture
+        var frame = annoView.frame  // Define size of the Pokemoen picture
         frame.size.height = 50
         frame.size.width = 50
         
@@ -113,7 +113,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        if updateCount < 3 {   //Get 3 times update location of the user then stop updating
+        if updateCount < 3 {   //Get 3 times update location of the user then stop updating location
             
             let region = MKCoordinateRegionMakeWithDistance(manager.location!.coordinate, 200 , 200)
             mapView.setRegion(region, animated: false)
@@ -123,7 +123,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         }
     }
     
-    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) { // Select Pokomon if is close enought to user
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) { // Check if selected Pokemon can be catch or nor
         mapView.deselectAnnotation(view.annotation!, animated: true)
         
         if view.annotation! is MKUserLocation {  // Exclude player from possibilities to be catch
@@ -135,19 +135,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         
         Timer.scheduledTimer(withTimeInterval: 1, repeats: false, block: {(timer) in
             
-            if let coord = self.manager.location?.coordinate {  // Select Pokomon if is close enought to catch by user
+            if let coord = self.manager.location?.coordinate {  // Check if Pokomon is close enought to be catch by player
                 
                 let pokemon = (view.annotation as! PokeAnnotation).pokemon
                 
                 if MKMapRectContainsPoint(mapView.visibleMapRect, MKMapPointForCoordinate(coord)) {
                     
+                    //Remove Pokemon from the map when it is catched
                     pokemon.cought = true
                     (UIApplication.shared.delegate as! AppDelegate).saveContext()
                     
-                    mapView.removeAnnotation(view.annotation!)  //Remove Pokemon from the map when it is catched
+                    mapView.removeAnnotation(view.annotation!)
                     
-                    let alertVC = UIAlertController(title: "Congrat!", message: "You caught the \(pokemon.name!). Great JOB :-)", preferredStyle: .alert)
+                    let alertVC = UIAlertController(title: "Congrat!", message: "You caught the \(pokemon.name!). Great JOB :-)", preferredStyle: UIAlertControllerStyle.alert)
                     
+                     // Add "Pokedex" action to segue to PokeDexViewController
                     let pokedexAction = UIAlertAction(title: "Pokedex", style: .default, handler: {(action) in
                         
                         self.performSegue(withIdentifier: "pkedaxsegue", sender: nil)
@@ -155,10 +157,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
                     })
                     
                     alertVC.addAction(pokedexAction)
+                    
+                     // Add "OK" action to desmiss UIAlertAction
+                    let OKAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                 
+                    
+                    alertVC.addAction(OKAction)
+                    
                     self.present(alertVC, animated: true, completion: nil)
                     
-                    
-                } else { // Show alert that pokemon is to far away to catch
+                   // Show alert that pokemon is to far away to catch
+                } else {
                     let alertVC = UIAlertController(title: "WARRNING", message: "You are too far away to catch the \(pokemon.name!). Move closer 😲", preferredStyle: .alert)
                     
                     let OKAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
@@ -173,7 +182,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         
     }
     
-    @IBAction func centerTapped(_ sender: Any) {   // Button action to center the current location of user
+   
+    @IBAction func centerTapped(_ sender: Any) {   // Button action to center the current location of player
         
         if let coord = manager.location?.coordinate {
             
